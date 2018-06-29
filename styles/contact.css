@@ -1,0 +1,244 @@
+body {
+	font: 17px/1.5 'Lato', sans-serif;
+	color: #797979;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow-x: hidden;
+	word-wrap: break-word;
+}
+	/*The header includes the logo, nav and search box*/
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	min-height: 70px;
+	background-color: white;
+}
+
+header a {
+	color: grey;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+header a:hover {
+	color: #EE534F;
+	font-weight: bold;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 7px 10px 0 20px;
+}
+
+header img {
+	float: left;
+	margin-left: 50px;
+}
+
+header nav {
+	float: left;
+}
+
+ul {
+	margin: 0;
+}
+
+header input {
+	margin-top: 8px;
+	height: 30px;
+}
+
+.pageheader {
+	width: 100%;
+	height: 300px;
+	color: #797979;
+	background-color: #EEEEEE;
+	padding:50px;
+}
+
+.pageheader h1 {
+	margin-top: 100px;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.pageheader p {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#contactdetails {
+	background-color: #fff;
+	margin-top: 50px;
+}
+
+#contactform {
+	width: 60%;
+	float: left;
+}
+
+@media(max-width: 800px) {
+	div #contactform {
+		display: block;
+		width: 100%;
+		margin-top: 100px;
+		position: relative;
+	}
+}
+
+form input {
+	width: 195px;
+	height: 30px;
+	padding: 7px;
+	border: 1px solid lightgrey;
+	margin: 10px 10px 10px 0;
+}
+
+textarea {
+	border: 1px solid lightgrey;
+	margin: 10px 10px 10px 0;
+}
+
+button {
+	color: white;
+	font-size: 15px;
+	background-color: #EE534F;
+	width: 100px;
+	padding: 5px;
+	border-color: #EE534F;
+}
+
+button:hover {
+background:lighten(#ED524E, 50%);
+margin:6px;
+width: 150px;
+height:40px;
+-webkit-transition: all 100ms ease;
+}
+
+#contactinfo {
+	width: 30%;
+	float: right;
+}
+
+#map {
+	margin-top: 50px;
+	width:
+	height:500px;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.footer_contact{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.footer_company{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.footer_help{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+@media(max-width: 800px) {
+	footer {
+		display: block;
+		width: 100%;
+	}
+}
+
+.bottomfooter {
+	width: 100%;
+	background-color: #EE534F;
+	height: 60px;
+	color: #fff;
+	padding: 3px;
+}
+
+.bottomfooter a{
+	color: #fff;
+}
+
+@media(max-width: 800px) {
+body {
+	width: 100%;
+	display: block;
+	padding: 0;
+	background-color: #fff;
+}
+}
+
+@media(max-width: 800px) {
+body img{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+}
+
+@media(max-width: 800px) {
+	header {
+		border-bottom: none;
+	}
+header li{
+	width: 100%;
+	display: block;
+	background-color: #EE534F;
+	border: 1px solid lightgrey;
+}
+header img {
+	width:100%;
+	height: auto;
+	padding: 0px;
+ }
+ header input {
+	 display: none;
+ }
+ header a {
+	 color: lightgrey;
+	 padding-bottom: 3px;
+ }
+ header a:hover {
+	 color: darkgrey;
+ }
+}
+
+@media(max-width: 800px) {
+	div #contactform {
+		width: 100%;
+	}
+	div input {
+		width: 100%;
+	}
+	div textarea {
+		width: 100%;
+	}
+}
+
+@media(max-width: 800px) {
+	div #contactinfo {
+		width: 100%;
+		word-wrap: break-word;
+	}
+}
