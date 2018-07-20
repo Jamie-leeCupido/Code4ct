@@ -80,6 +80,11 @@ header input {
 	text-align: center;
 }
 
+#cart{
+  height: 50px;
+  width: 50px
+}
+
 @media(max-width: 800px) {
 body {
   width: 100%;
@@ -168,6 +173,10 @@ height:40px;
 margin-top: 100px;
 }
 
+#Grid{
+  text-align: center;
+}
+
 button {
 color: white;
 font-size: 14px;
@@ -218,7 +227,7 @@ margin-right: 200px;
 }
 
 #course-shape{
-  height: 400px;
+  height: 600px;
   width: 400px;
   border-style: solid;
   border-color: black;
@@ -226,4 +235,44 @@ margin-right: 200px;
   background-color: pink;
   text-align: center;
 
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: wheat;
+  font-size: 20px;
+}
+
+.footer_contact{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.footer_company{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.footer_help{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+@media(max-width: 800px) {
+	footer {
+		display: block;
+		width: 100%;
+	}
+}
+
+.bottomfooter {
+	width: 100%;
+	background-color: #EE534F;
+	height: 60px;
+	color: #fff;
+	padding: 3px;
+}
+
+.bottomfooter a{
+	color: #fff;
 }
